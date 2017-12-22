@@ -13,7 +13,7 @@ public class ReadTopic {
 		this.topic=topic;	
 	}
 	
-	public synchronized DataInputStream getDataInputStream() throws FileNotFoundException {
+	public DataInputStream getDataInputStream() throws FileNotFoundException {
 		while (MapUtils.getValue(topic) == 1){   //取得其Value值 如果为1表示循环等待
 			
 		}
